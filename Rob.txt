@@ -1,0 +1,32 @@
+It will make sense after a bit of practice!
+
+
+    create github account if you haven't already done so
+    Install Git for windows: http://code.google.com/p/msysgit/downloads/list
+    follow Git for windows instructions here: http://help.github.com/win-set-up-git/
+    follow the SSH on the same page (VERY IMPORTANT!)
+    Fork repository (ie create a workspace in TFS terms)
+    I created C:\Github folder
+    Open git bash, then: cd /C/Github/
+    git clone git@github.com:nathanbellamoreusername/AutoAgent.git (change nathanbellamoreusername to your own github username)
+    cd AutoAgent
+    git remote add upstream git://github.com/RC117/AutoAgent.git
+    git fetch upstream
+
+ 
+
+    "Check-in" changes
+    Make sure you are in /C/Github/AutoAgent/ (should say master in GitBash shell)
+    git add *.*
+    git commit -m "my comment"
+    git push origin master
+
+ 
+
+    "get latest" changes
+    git fetch upstream
+    git merge upstream/master
+
+
+http://help.github.com/send-pull-requests/
+ 
